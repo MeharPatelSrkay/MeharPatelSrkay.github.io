@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undercover</title>
+    <link rel="icon" href="./logo.jpg">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid px-10 py-5">
+        <div class="bubbles">
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+            <div class="bubble">
+                <div class="bubbleblue"></div>
+                <div class="bubblepink"></div>
+                <div class="bubbleyellow"></div>
+                <div class="bubblewhite1"></div>
+                <div class="bubblewhite2"></div>
+            </div>
+        </div>
+
+        <form class="mb-5">
+            <label class="numlable" for="no_players">Enter the number of Players : </label>
+            <input class="numinp" name="no_players" type="number" id="no_players">
+            <br>
+            <label class="numlable" for="no_undercover">Enter the number of Undercovers : </label>
+            <input class="numinp" name="no_undercover" type="number" id="no_undercover">
+            <br>
+            <label class="numlable" for="no_mrwhite">Enter the number of Mr. White : </label>
+            <input class="form-control" name="no_mrwhite" type="number" id="no_mrwhite">
+            <br>
+            <button id="entervalues" class="popup-button" onclick=passnumvalues(event)>Enter Names</button>
+        </form>
+        <div id="errorbox" style = "display: none;">
+            <p>Please enter valid numbers</p>
+        </div>
+        
+        <div class="mb-5" style="display: flex; flex-direction: column;" id="main">
+            
+        </div>
+        
+        <div id="turn">
+            
+        </div>
+        <div id="cardbox">
+        </div>
+            
+        
+        <div id="vote">
+            
+        </div>
+        <div id="votecards">
+            
+            
+        </div>
+        <div id="voteanswer">
+
+        </div>
+        <div id="playagaindiv">
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>

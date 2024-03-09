@@ -1,0 +1,311 @@
+body{
+  height: 100vw;
+  background-image: linear-gradient( 180deg,  #051ad6 -2.1%, #0ab3bf 90% );
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.bubbles{
+  position: absolute;
+}
+
+.bubbles .bubble{
+  position: absolute;
+  /* border: 0.1em solid rgba(255, 255, 255, 0.4); */
+  border: none;
+  border-radius: 50%;
+  box-shadow: inset 2em 2em 5em rgba(255, 255, 255, 0.4), 1em 1em 3em rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  animation: bubbleanim 3s linear 0s infinite;
+  /* transition: all 3s linear 0s; */
+}
+
+@keyframes bubbleanim {
+  0%{
+    transform: translateY(0em);
+  }
+  25%{
+    transform: translateY(1em);
+  }
+  75%{
+    transform: translateY(-1em);
+  }
+  100%{
+    transform: translateY(0em);
+  }
+}
+
+.bubbles .bubble:nth-child(1){
+  margin: 25em 10em;
+  height: 30em;
+  width: 30em;
+}
+.bubbles .bubble:nth-child(2){
+  margin: 5em 40em;
+  height: 35em;
+  width: 35em;
+}
+.bubbles .bubble:nth-child(3){
+  margin: 35em 85em;
+  height: 30em;
+  width: 30em;
+}
+.bubbles .bubble:nth-child(4){
+  margin: 3em 98em;
+  height: 15em;
+  width: 15em;
+}
+.bubbles .bubble:nth-child(5){
+  margin: 65em 75em; 
+  height: 25em;
+  width: 25em;
+}
+.bubbles .bubble:nth-child(6){
+  margin: 60em 30em;
+  height: 40em;
+  width: 40em;
+}
+.bubbles .bubble:nth-child(7){
+  margin: 65em 5em;
+  height: 20em;
+  width: 20em;
+}
+.bubbles .bubble:nth-child(8){
+  margin: 45em 30em;
+  height: 15em;
+  width: 15em;
+}
+.bubbles .bubble:nth-child(9){
+  margin: 45em 65em;
+  height: 20em;
+  width: 20em;
+}
+.bubbles .bubble:nth-child(10){
+  margin: 90em -5em;
+  height: 20em;
+  width: 20em;
+}
+.bubbles .bubble:nth-child(11){
+  margin: 5em -5em;
+  height: 20em;
+  width: 20em;
+}
+.bubbles .bubble:nth-child(12){
+  margin: -5em 30em;
+  height: 20em;
+  width: 20em;
+}
+.bubbles .bubble:nth-child(13){
+  margin: 90em 95em;
+  height: 30em;
+  width: 30em;
+}
+.bubbles .bubble:nth-child(14){
+  margin: 50em -10em;
+  height: 20em;
+  width: 20em;
+}
+.bubbles .bubble:nth-child(15){
+  margin: 90em 50em;
+  height: 20em;
+  width: 20em;
+}
+.bubbles .bubble:nth-child(16){
+  margin: 3em 72em;
+  height: 30em;
+  width: 30em;
+}
+
+.bubbles .bubble .bubbleblue{
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  margin: 10%;
+  border-left: 2em solid rgba(0, 255, 170, 0.8);
+  border-radius: 50%;
+  transform: rotate(60deg);
+  filter: blur(1em);
+  z-index: -1;
+}
+
+.bubbles .bubble .bubblepink{
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  margin: 10%;
+  border-left: 2em solid rgba(255, 91, 214, 0.8);
+  border-radius: 50%;
+  transform: rotate(-10deg);
+  filter: blur(1em);
+  z-index: -1;
+}
+
+.bubbles .bubble .bubbleyellow{
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  margin: 15%;
+  border-left: 2em solid rgba(255, 255, 105, 0.8);
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  filter: blur(1em);
+  z-index: -1;
+}
+
+.bubbles .bubble .bubblewhite1{
+  position: absolute;
+  height: 15%;
+  width: 15%;
+  margin: 18%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  filter: blur(1em);
+  z-index: -1;
+}
+
+.bubbles .bubble .bubblewhite2{
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  margin: 35%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  filter: blur(1em);
+  z-index: -1;
+}
+
+.numlable{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+#turn{
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+img.pickme{
+  width: 100%;
+  filter: grayscale(1);
+}
+
+#cardbox{
+  padding: 0 5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 4em;
+}
+
+.card{
+  height: 23em;
+  width: 18em;
+  position: relative;
+  transition: all 0.3s ease-in 0s;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.01) translateX(0.3em);
+}
+
+.namefirstletter{
+  margin: 0.1em 0.1em;
+  font-size: 10em;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  border: 0.02em solid black;
+  border-radius: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.namewhole{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card.othercard{
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient( 90deg, rgba(225, 240, 90, 0.7),  rgba(0, 255, 213, 0.7) , rgba(225, 240, 90, 0.7));
+  background-size: 200% auto;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.card.othercard:hover, .card.firstcard:hover, .card.lastcard:hover{
+  background-position: right center;
+}
+
+.card.firstcard:hover, .card.lastcard:hover{
+  background-position: right center;
+}
+
+.card.firstcard, .card.lastcard{
+  background-image: linear-gradient( 90deg,  rgba(0, 255, 213, 0.7) , rgba(225, 240, 90, 0.7), rgba(0, 255, 213, 0.7));
+  background-size: 200% auto;
+}
+
+.card.firstcard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .otherimg{
+  /* color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1em;
+  height: 50%;
+  filter: invert(0);
+}
+
+.card .okaybtn{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+button:disabled{
+    background: grey;
+}
+
+.othername, .othertext, .otherword{
+  text-align: center;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+  word-wrap: break-word;
+}
+
+.othername{
+  margin-top: 0.2em;
+}
+
+.othertext{
+  margin-top: -1em;
+}
+
+  /* .in-cardbtn{
+    width: 60%;
+  } */
