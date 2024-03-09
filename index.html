@@ -128,17 +128,22 @@
             </div>
         </div>
 
-        <form class="mb-5">
-            <label class="numlable" for="no_players">Enter the number of Players : </label>
-            <input class="numinp" name="no_players" type="number" id="no_players">
-            <br>
-            <label class="numlable" for="no_undercover">Enter the number of Undercovers : </label>
-            <input class="numinp" name="no_undercover" type="number" id="no_undercover">
-            <br>
-            <label class="numlable" for="no_mrwhite">Enter the number of Mr. White : </label>
-            <input class="form-control" name="no_mrwhite" type="number" id="no_mrwhite">
-            <br>
-            <button id="entervalues" class="popup-button" onclick=passnumvalues(event)>Enter Names</button>
+        <form class="enterval mb-5">
+            <div class="entervaldiv">
+                <label class="numlable" for="no_players">Enter the number of Players : </label>
+                <input class="numinp" name="no_players" type="number" id="no_players">
+            </div>
+            <div class="entervaldiv">
+                <label class="numlable" for="no_undercover">Enter the number of Undercovers : </label>
+                <input class="numinp" name="no_undercover" type="number" id="no_undercover">
+            </div>
+            <div class="entervaldiv">
+                <label class="numlable" for="no_mrwhite">Enter the number of Mr. White : </label>
+                <input class="numinp" name="no_mrwhite" type="number" id="no_mrwhite">
+            </div>
+            <div class="entervaldiv">
+                <button id="entervalues" class="popup-button" onclick=passnumvalues(event)>Enter Names</button>
+            </div>
         </form>
         <div id="errorbox" style = "display: none;">
             <p>Please enter valid numbers</p>

@@ -80,7 +80,7 @@ function makediv(game) {
     game.undercover = []
     game.mrwhite = []
     for (let i = 0; i < game.num_of_players; i++) {
-        formatted = `<label>Enter the ${i+1}'s player Name </label><input type='text' id = 'names${i}' /> <br/>`
+        formatted = `<div class="enternamediv"><label class="enternamelabel">Enter the ${i+1}'s player Name : </label><input class="enternameinp" type='text' id = 'names${i}' /> </div>`
         // main.append(formatted)
         main.innerHTML += formatted
     }
@@ -214,14 +214,14 @@ function gotovote(game) {
     let civ_count = 0
     let white_count = 0
     let vote = document.getElementById("vote")
-    vote.innerHTML += `<button id="votebtn" class="popup-button">Go to Vote</button>`
+    vote.innerHTML += `<button id="votebtn" class="gotovotebtn popup-button">Go to Vote</button>`
 
     let votebtn = document.getElementById("votebtn")
     votebtn.addEventListener('click', () => {
         votebtn.disabled = true
         let votecards = document.getElementById("votecards")
         for (let i = 0; i < game.players.length; i++) {
-            votecards.innerHTML += `<button id="votename${i}" class="popup-button">${game.players[i].name}</button>`
+            votecards.innerHTML += `<button id="votename${i}" class="votebtn popup-button">${game.players[i].name}</button>`
         }
         un_count = 0
         civ_count = game.num_of_players - game.num_of_undercover

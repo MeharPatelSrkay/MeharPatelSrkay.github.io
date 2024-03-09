@@ -174,26 +174,76 @@ body{
   z-index: -1;
 }
 
+.enterval{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.enterval .entervaldiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: justify;
+  align-items: center;
+}
+
 .numlable{
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-transform: uppercase;
   font-weight: 400;
   font-family: 'Times New Roman', Times, serif;
   color: white;
 }
 
-.
+.enterval .numinp{
+  text-align: center;
+  width: 20%;
+  margin-left: 2em;
+  border: none;
+  border-radius: 3em;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 1em 1em 3em black;
+}
+
+.entervaldiv button{
+  width: 60%;
+  margin-left: 0em;
+}
+
+.enternamediv{
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.enternamelabel{
+  font-size: 1.3em;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.enternamediv .enternameinp{
+  text-align: center;
+  width: 40%;
+  margin-left: 2em;
+  border: none;
+  border-radius: 3em;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 1em 1em 3em black;
+}
 
 ::-webkit-scrollbar{
   display: none;
 }
 
 #turn{
+  margin-bottom: 1em;
+  color: white;
   display: flex;
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 800;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -238,7 +288,7 @@ img.pickme{
 .namewhole{
   text-transform: uppercase;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -279,20 +329,54 @@ img.pickme{
   filter: invert(0);
 }
 
-.card .okaybtn{
+button:disabled{
+    background: rgba(76, 77, 76, 0.6);
+}
+
+.okaybtn{
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 100%;
+  align-items: center;
 }
 
-button:disabled{
-    background: grey;
+.okaybtn .popup-button{
+  width: 80%;
+  background-image: linear-gradient(to right, rgba(255, 91, 214, 0.6) 0%, rgba(10, 179, 191, 0.6) 50%, rgba(255, 91, 214, 0.6));
+}
+
+#vote{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.gotovotebtn.popup-button{
+  width: 40%;
+}
+
+#votecards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#votecards .votebtn{
+  width: 30%;
+  height: 10em;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+  background-image: linear-gradient(to right, rgba(10, 179, 191, 0.8) 0%, rgba(225, 255, 91, 0.8) 50%, rgba(10, 179, 191, 0.8));
+
 }
 
 .othername, .othertext, .otherword{
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-family: 'Times New Roman', Times, serif;
   word-wrap: break-word;
